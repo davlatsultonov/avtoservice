@@ -17,6 +17,7 @@ export default defineConfig(({command, mode}) => {
                 input: {
                     main: resolve(__dirname, 'src/index.html'),
                     auth: resolve(__dirname, 'src/pages/auth.html'),
+                    services: resolve(__dirname, 'src/pages/services.html'),
                 },
             },
         },
