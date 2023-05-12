@@ -20,3 +20,10 @@ import * as bootstrap from 'bootstrap';
         }, false)
     })
 })()
+
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.garage-item').forEach(item => {
+        item.setAttribute("data-bs-toggle", 'modal');
+        item.setAttribute("data-bs-target", '#master-info');
+    })
+})
