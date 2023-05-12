@@ -1,6 +1,6 @@
 .main-navbar {
 
-  .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active {
+  .navbar-nav .show > .nav-link, .navbar-nav .nav-link.active, .nav-link:hover, .nav-link:focus {
     border-bottom: 3px solid $primary;
   }
 }
