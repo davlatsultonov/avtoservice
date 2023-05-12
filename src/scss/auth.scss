@@ -1,0 +1,26 @@
+.auth-tabs {
+
+  &.nav-tabs .nav-link {
+    background-color: $primary;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+
+    &.active {
+      background-color: #02A4D7;
+      color: #fff;
+    }
+  }
+}
+
+.auth-tabs-container {
+
+
+  .was-validated .form-check-input:valid ~ .form-check-label, .form-check-input.is-valid ~ .form-check-label {
+    color: #000;
+  }
+
+  .was-validated .form-check-input:valid, .form-check-input.is-valid {
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+}
