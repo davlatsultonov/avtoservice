@@ -1,7 +1,8 @@
 {
-  "name": "avtoservice-design",
+  "name": "avtoservice",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://davlatsultonov.github.io/avtoservice",
   "type": "module",
   "scripts": {
     "dev": "vite",
