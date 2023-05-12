@@ -4,23 +4,27 @@ import { defineConfig } from 'vite'
 const root = resolve(__dirname, 'src');
 const outDir = resolve(__dirname, 'dist');
 
-export default defineConfig({
-    root,
-    build: {
-        outDir,
-        emptyOutDir: true,
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, 'src/index.html'),
-                /*about: resolve(__dirname, 'src/pages/about.html'),
-                contacts: resolve(__dirname, 'src/pages/contacts.html'),*/
+export default defineConfig(({command, mode}) => {
+    const isProduction = mode === 'production'
+
+    return {
+        base: isProduction ? '/avtoservice/' : '',
+        root,
+        build: {
+            outDir,
+            emptyOutDir: true,
+            rollupOptions: {
+                input: {
+                    main: resolve(__dirname, 'src/index.html'),
+                    auth: resolve(__dirname, 'src/pages/auth.html'),
+                },
             },
         },
-    },
-    server: {
-        open: "index.html"
-    },
-    preview: {
-        open: "index.html"
+        server: {
+            open: isProduction ? "/avtoservice/index.html" : "index.html"
+        },
+        preview: {
+            open: isProduction ? "/avtoservice/index.html" : "index.html"
+        }
     }
 })
