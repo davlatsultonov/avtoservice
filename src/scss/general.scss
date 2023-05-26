@@ -137,3 +137,20 @@ main {
     height: 35px;
   }
 }
+
+.master-card {
+
+
+  &:hover {
+
+    .master-card__user-name {
+      background-color: #006498;
+      color: white;
+    }
+  }
+
+  &__user-name {
+    background-color: #99C1D6;
+    transition: background-color 100ms linear;
+  }
+}

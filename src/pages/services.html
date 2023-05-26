@@ -504,19 +504,53 @@
 <script type="module" src="../js/main.js"></script>
 
 <!-- Modal -->
-<div class="modal fade" id="master-info" tabindex="-1" aria-labelledby="masterInfoLabel" aria-hidden="true">
+<div class="modal fade mx-auto" id="master-info" tabindex="-1" aria-labelledby="masterInfoLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Информация о мастере</h1>
+      <div class="modal-header border-0 pb-0">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet beatae commodi corporis cum cupiditate dolor facere fugiat illo iure neque non nulla numquam reiciendis repellendus, sed sit ut vel veritatis vero voluptatibus! Animi aperiam, culpa dolor doloremque doloribus ducimus error, exercitationem, impedit nesciunt nisi pariatur quae qui ratione soluta suscipit veritatis voluptatum! A accusamus aliquam at aut consequuntur dolores dolorum, enim eos explicabo facere harum incidunt iure laudantium nostrum, officia perferendis perspiciatis quas quibusdam rem reprehenderit sapiente sint soluta suscipit temporibus veniam veritatis voluptate voluptates? Atque dolore doloremque enim maxime molestiae nisi quis quo? A ad, aliquid animi beatae cum cumque debitis deleniti deserunt, dicta dolorum ea eaque esse ex fugit in incidunt ipsum, itaque maiores minus nam necessitatibus nesciunt numquam odit officia optio quas quisquam ratione rerum sapiente suscipit tempora tempore tenetur voluptates. A accusamus, aliquid aperiam cupiditate dolor dolore eos eveniet, facere harum in ipsa itaque labore laudantium libero maiores molestias nihil nulla possimus provident quo rem repellendus sint sit temporibus ut veritatis voluptate! Amet at beatae consequuntur culpa dolorem error, esse eum facere impedit modi nemo nisi nostrum obcaecati optio placeat quo sequi vitae. Accusamus ad alias consectetur cupiditate impedit mollitia praesentium sed sequi, soluta tempora voluptatem.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores atque blanditiis consectetur cumque deserunt dicta distinctio dolore dolorem dolores ducimus eaque eligendi facere ipsum iste itaque modi nam nobis nostrum optio placeat quasi quia quos saepe, sint, sunt, suscipit totam unde voluptas voluptatum. Dicta ipsum nam neque porro quaerat, repudiandae! Alias consequatur culpa enim molestiae nesciunt nostrum obcaecati odio rem ullam voluptate. Amet in, sint! Accusamus aliquam architecto cum distinctio doloremque ea, fugiat hic ipsa modi natus nihil officia, quaerat, quia sed tempora temporibus veritatis. Consectetur deserunt distinctio enim ipsa minima rerum voluptas! Ad adipisci autem pariatur quia voluptatum. At doloremque eius illum ipsam neque nisi, numquam provident repudiandae unde? A alias amet animi aspernatur consequuntur culpa dolor eos expedita fugit harum iure libero magni, maxime nulla perspiciatis quas quisquam recusandae reprehenderit repudiandae rerum ullam vitae voluptatem voluptatum. Aspernatur autem culpa ea, eius fuga in itaque laudantium nisi officiis porro praesentium quibusdam quisquam repudiandae, sed sequi unde veritatis. Alias debitis eveniet id incidunt iure nobis omnis quam quod quos tempore. Ab adipisci blanditiis culpa earum eligendi, enim eveniet exercitationem expedita fuga fugiat impedit labore laboriosam laudantium magnam minima pariatur quis ratione recusandae, sed sunt tenetur ullam unde voluptatum. Ad adipisci amet in laudantium modi reprehenderit sit soluta. A, enim esse est facilis laborum magnam magni necessitatibus odit optio quam quia recusandae repellat repellendus tempore ullam! Animi, ea eius esse eum illo iusto omnis ratione tempore. Architecto consequuntur doloribus earum eius et facere, hic iusto maxime officiis placeat ratione rerum tenetur! Ab adipisci, aliquam aperiam aut corporis culpa dolores eligendi id in ipsam magnam minus mollitia necessitatibus neque odio recusandae reiciendis tenetur totam vel voluptas? Atque cum deserunt distinctio, dolor doloremque eaque error et facere fuga in ipsa ipsam iure perferendis quam rem saepe sed soluta suscipit tempora tempore, veniam?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <div class="card border-0 position-relative master-card">
+          <div class="position-relative">
+            <img src="https://plus.unsplash.com/premium_photo-1661547897449-b2374c6e4a09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c2VydmljZSUyMHdvcmtlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="card-img">
+            <div class="card-img-overlay px-0">
+              <div class="ps-4">
+                <img src="../assets/star.svg" alt="star icon">
+                <img src="../assets/star.svg" alt="star icon">
+                <img src="../assets/star.svg" alt="star icon">
+                <img src="../assets/star.svg" alt="star icon">
+                <img src="../assets/star.svg" alt="star icon">
+              </div>
+
+              <h4 class="master-card__user-name p-3 position-absolute bottom-0 w-100 text-center mb-0">
+                Исломов Муносиб
+              </h4>
+            </div>
+          </div>
+          <ul class="list-group border-0 pt-3 pb-4">
+            <li class="list-group-item border-0 p-0 py-1">
+              <span class="fw-bold">Опыт работы:</span> 5 лет.
+            </li>
+            <li class="list-group-item border-0 p-0 py-1">
+              <span class="fw-bold">Время работы:</span> с 8:00 до 20:00
+            </li>
+            <li class="list-group-item border-0 p-0 py-1">
+              <span class="fw-bold">Тел:</span> <span class="text-decoration-underline">+992900000000</span>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#">
+              <img src="../assets/tgsvg.svg" alt="telegram icon">
+            </a>
+            <button class="btn btn-primary rounded-5 flex-grow-1 mx-5 py-2 px-5 fs-5 border-1 border-dark">
+              Позвонить
+            </button>
+            <a href="#">
+              <img src="../assets/whatsapp.svg" alt="whatsapp icon">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
