@@ -68,6 +68,14 @@ main {
   place-content: center;
   grid-template-columns: repeat(26, 49px);
 
+  @media screen and (max-width: 1400px) {
+    grid-template-columns: repeat(26, 40px);
+  }
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(26, 35px);
+  }
+
   @media screen and (max-width: 1024px) {
     place-content: baseline;
   }
@@ -116,11 +124,16 @@ main {
   &:hover {
     background-color: $primary;
   }
-}
 
-.road-horizontal {
 
-  &:nth-child(n ) {
+  @media screen and (max-width: 1400px) {
+    width: 40px;
+    height: 40px;
+  }
 
+
+  @media screen and (max-width: 1200px) {
+    width: 35px;
+    height: 35px;
   }
 }
