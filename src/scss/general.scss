@@ -154,3 +154,9 @@ main {
     transition: background-color 100ms linear;
   }
 }
+
+.about-us-block {
+  min-height: 600px;
+  background: url("../assets/about_us.png") no-repeat center;
+  background-size: cover;
+}
